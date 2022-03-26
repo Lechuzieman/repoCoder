@@ -1,0 +1,398 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;500&family=Roboto:wght@300;400;500&display=swap');
+
+*{
+	font-family: 'Roboto Mono', monospace;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	font-size: 62.5%;
+	background-color: rgb(255, 255, 255);
+}
+
+/*---------------------------- GRID ---------------------------*/
+
+@media (min-width: 1px) and (max-width: 991.98px){
+
+	.grid{
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+	    grid-template-rows: repeat(6, auto);
+	    grid-template-areas:
+	        "nav nav nav nav"
+		    "titulo1 titulo1 titulo1 titulo1"
+		    ". cards cards ."
+		    "titulo2 titulo2 titulo2 titulo2"
+		    ". texto texto ."
+		    "pies pies pies pies";
+	    height: 100vh;
+		width: 100vw;
+	}
+}
+
+
+
+#encabezado{
+	grid-area: nav;
+}
+
+#titulo1{
+	grid-area: titulo1;
+}
+
+#carta{
+	grid-area: cards;
+}
+
+#titulo2{
+	grid-area: titulo2;
+}
+
+#nosotros{
+	grid-area: texto;
+}
+
+
+#pies{
+	grid-area: pies;
+}
+
+/*---------------------------- ENCABEZADO ---------------------------*/
+
+.botoneraNav{
+	display: flex;
+    background-color: rgb(27, 16, 14);
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.headerLista{
+	display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+.headerLista li{
+	list-style: none;
+}
+
+.headerLista li a{
+	font-size: 1.5rem;
+	text-decoration: none;
+	color: rgb(255, 255, 255);
+	font-weight: 400;
+	padding: 1rem;
+	margin: 1rem;
+}
+
+.headerLista li a:hover{
+	font-weight: 800;
+	color: rgb(255, 255, 255);
+}
+
+#logoIndex{
+	margin: 1rem;
+	width: 10rem;
+	height: auto;
+}
+
+/*---------------------------- HOME DESTACADOS / CARDS ---------------------------*/
+
+
+
+.tituloDestacados{
+	text-align: center;
+	font-size: 2rem;
+}
+
+.card{
+	text-align: center;
+	border: 1px solid black;
+}
+
+.destacadosProducto{
+	display: inline-flex;
+    margin: 2rem;
+    padding: 3rem;
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+.container{
+	width: 10rem;
+	margin: 0 auto;
+}
+
+#imagenCard{
+	width: 20rem;
+	height: 20rem;
+}
+
+
+/*---------------------------- HOME NOSOTROS ---------------------------*/
+
+.titulo2{
+	font-size: 1.5rem;
+	text-align: center;
+}
+
+.contenidoNosotros{
+	font-size: 1rem;
+	text-align: center;
+}
+
+/*---------------------------- FOOTER UBICACION ---------------------------*/
+
+.ubicacion{
+	text-align: center;
+}
+
+.ubicacionTitulo{
+	font-size: 2rem;
+	margin: 2rem;
+	padding: 1rem;
+}
+
+.textoUbicacion{
+	text-align: center;
+	font-size: 1.5rem;
+	width: 50%;
+	height: auto;
+	margin: 2px auto;
+	padding: 2rem;
+}
+
+.ubicacionMapa{
+	margin-bottom: 2rem;
+}
+
+/*---------------------------- FOOTER ¿COMO COMPRAR? ---------------------------*/
+
+.comoComprar{
+	text-align: center;
+}
+
+.tituloComoComprar{
+	font-size: 3rem;
+	margin: 2rem;
+	padding: 1rem;
+}
+
+.listaComoComprar{
+	font-size: 1.5rem;
+}
+
+.textoComoComprar{
+	margin: 2rem;
+	padding: 2rem;
+	font-size: 1.5rem;
+}
+
+/*---------------------------- FOOTER SOBRE NOSOTROS---------------------------*/
+
+.containerNosotros{
+	text-align: center;
+	margin: 2rem;
+}
+
+.tituloSobreNosotros{
+	font-size: 2rem;
+}
+
+.textoSobreNosotros{
+	font-size: 1.3rem;
+	width: 50%;
+	margin: 2rem auto;
+	padding: 2rem;
+}
+
+/*---------------------------- FOOTER CONTACTANOS ---------------------------*/
+
+.containerContacto{
+	text-align: center;
+	margin: 2rem;
+}
+
+.tituloContacto{
+	font-size: 2rem;
+}
+
+.textoContacto{
+	font-size: 1.3rem;
+	width: 50%;
+	margin: 2rem auto;
+	padding: 2rem;
+}
+
+/*---------------------------- FOOTER CONTACTANOS ---------------------------*/
+
+.formulario{
+	display: block;
+	text-align: center;
+	margin: 2rem;
+}
+
+/*---------------------------- FOOTER FINAL ---------------------------*/
+
+.footer{
+	background-color: rgb(27, 16, 14);
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.redes{
+	font-size: 1.2rem;
+	color: rgb(255, 255, 255);
+}
+
+.containRedes{
+	font-style: none;
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+}
+
+.info{
+	font-size: 1.2rem;
+	text-align: left;
+	color: rgb(255, 255, 255);
+}
+
+.containInfo{
+	font-style: none;
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+}
+
+.tituloFooter{
+	font-size: 1.5rem;
+}
+
+#copyright{
+	text-align: center;
+	margin: 0;
+	padding: 0.5rem;
+	color: rgb(255, 255, 255);
+}
+
+/*---------------------------- MEDIA QUERY ---------------------------*/
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+	body{
+		background-color: green;
+	}
+
+	.grid{
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: repeat(6, auto);
+		grid-template-areas:
+			"nav nav nav nav"
+			"titulo1 titulo1 titulo1 titulo1"
+			"cards cards cards cards"
+			"titulo2 titulo2 titulo2 titulo2"
+			". texto texto ."
+			"pies pies pies pies";
+		height: 100vh;
+		width: 100vw;
+	}
+
+	.botoneraNav{
+		display: flex;
+	    background-color: rgb(27, 16, 14);
+	    position: sticky;
+	    width: 100%;
+	    margin: 0;
+	    padding: 0;
+	    flex-direction: row;
+	    align-items: center;
+	    flex-wrap: nowrap;
+	}
+
+	.destacadosProducto{
+		display: inline-flex;
+	    margin: 2rem;
+	    padding: 3rem;
+	    width: 100%;
+	    flex-direction: row;
+	    flex-wrap: wrap;
+	    align-content: space-around;
+	    justify-content: space-between;
+	}
+
+	.headerLista {
+	    display: flex;
+	    flex-direction: row;
+	    width: 100%;
+	    justify-content: flex-start;
+}
+
+}
+
+@media (min-width: 1200px) {
+
+	body{
+		background-color: blueviolet;
+	}
+
+	.grid{
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: repeat(6, 1fr) ;
+		grid-template-areas:
+			"nav nav nav nav"
+			"titulo1 titulo1 titulo1 titulo1"
+			"cards cards cards cards"
+			"titulo2 titulo2 titulo2 titulo2"
+			". texto texto ."
+			"pies pies pies pies";
+		height: 100vh;
+		width: 100vw;
+	}
+
+	.botoneraNav{
+		display: flex;
+	    background-color: rgb(27, 16, 14);
+	    position: sticky;
+	    width: 100%;
+	    margin: 0;
+	    padding: 0;
+	    flex-direction: row;
+	    align-items: center;
+	    flex-wrap: nowrap;
+	}
+
+	.destacadosProducto{
+		display: inline-flex;
+		margin: 2rem;
+		padding: 3rem;
+		width: 100%;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+
+	.headerLista {
+	    display: flex;
+	    flex-direction: row;
+	    width: 100%;
+	    justify-content: flex-start;
+
+  	}
+
+}
+
+
+
