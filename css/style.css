@@ -90,6 +90,7 @@ html{
 	color: rgb(255, 255, 255);
 	font-weight: 400;
 	padding: 1rem;
+	padding-bottom: 0%;
 	margin: 1rem;
 }
 
@@ -115,7 +116,15 @@ html{
 
 .card{
 	text-align: center;
+	margin: 1rem;
 	border: 1px solid black;
+	cursor: pointer;
+}
+
+.card:hover{
+	transform: rotateZ(360deg);
+	cursor: pointer;
+	transition: 1s;
 }
 
 .destacadosProducto{
@@ -395,4 +404,34 @@ html{
 }
 
 
+/*---------------------------- ANIMATIONS ---------------------------*/
+
+@keyframes textAlpha{
+	from{opacity: 0}
+	to{opacity: 1;}
+}
+
+.destacadosProducto{
+	animation-name: textAlpha;
+	animation-duration: 3s;
+	animation-timing-function: ease;
+}
+
+header{
+	animation-name: bounceInDown;
+	animation-duration: 1s;
+	animation-timing-function: ease;
+}
+
+.contenidoNosotros{
+	animation-name: fadeIn;
+	animation-duration: 4s;
+	animation-timing-function: ease;
+}
+
+.footer{
+	animation-name: fadeInUpBig;
+	animation-duration: 1s;
+	animation-timing-function: ease;
+}
 
